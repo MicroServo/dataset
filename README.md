@@ -1,9 +1,13 @@
-# MicroServo
+# MicroServo Datasets
 
-MicroServo, is an overall dataset for analyzing operation problems such as anomaly detection, failure classification, root cause analysis, etc.
+MicroServo Datasets, are overall datasets for analyzing operation problems such as anomaly detection, failure classification, root cause analysis, etc.
+
+The "complex" folder contains datasets for a variety of operation scenarios.
+
+The "single" folder contains datasets for a single type of operation scenario.
 
 ## Quick Start
-The MicroServo dataset consists of three days of data collected from the MicroServo platform. The fault scenarios include Pod failure, CPU and Memory stress, and faults related to network and HTTP types. It also provides the ground truth of fault injection.
+The MicroServo datasets consists of three days of data collected from the MicroServo platform. The fault scenarios include Pod failure, CPU and Memory stress, and faults related to network and HTTP types. It also provides the ground truth of fault injection.
 
 ### Metric
 MicroServo includes 15 container-level metrics and 10 service-level metrics, each stored in separate CSV files. The format for these files is as follows: (timestamp, cmdb_id, kpi_name, value), where each line represents a value sampled from all instances of a service. The sampling frequency is set at 60 second.
